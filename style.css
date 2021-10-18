@@ -1,0 +1,329 @@
+:root{
+    --headingColor: #4d3347;
+    --textColor: #272727;
+    --bodyBackground: #fbf6ed;
+    --background: #ffeccc;
+    --buttonBackground: #ef4056;
+    --navTextCoor: #857a83;
+    --bodySize: 22px;
+    --backgroundPadding: 20px;
+    --backgroundProperties: url(Images/orange-circle.png) no-repeat;
+    --headingFont: 'Playfair Display', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #fbf6ed;
+}
+
+/* Container */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav aside{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+nav aside ul{
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+nav aside ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+nav aside ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--navTextCoor);
+}
+
+nav aside ul li a:hover{
+    color: var(--headingColor);
+}
+
+nav .contactButton{
+    box-sizing: border-box;
+    border-radius: 25px;
+    background: #ef4056;
+    padding: 5px 45px 10px 45px;
+    color: white;
+}
+
+nav .contactButton svg{
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+}
+
+nav .contactButton:hover{
+    color: white;
+}
+
+
+/* SectionS */
+
+
+/* Landing Section */
+
+
+.landingSection .my-slider article{
+    display: flex;
+    margin: 100px 0;
+    background: url(Images/Rectangle\ 36.jpg) no-repeat;
+    background-position-y: bottom;
+}
+
+.landingSection .my-slider article figure{
+    width: 40%;
+}
+
+.landingSection .my-slider article figure img{
+    margin: 0 0 20px 50px;
+}
+
+
+.landingSection .my-slider article aside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.landingSection .my-slider article aside h2{
+    font-size: 38px;
+    margin: 20px 0 0 0;
+    font-family: var(--headingFont);
+    color: var(--headingColor);
+    font-weight: 900;
+}
+
+.landingSection .my-slider article aside p{
+    font-size: var(--bodySize);
+    color: var(--textColor);
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0 100px 0 0;
+}
+
+.landingSection .my-slider article aside button{
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 40px 12px 40px;
+    color: white;
+    background: var(--buttonBackground);
+    cursor: pointer;
+}
+
+.landingSection .my-slider article aside button svg{
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+
+.landingSection #controls .controlButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.landingSection #controls .controlButtons button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin: 0 20px 50px 100px;
+}
+
+.landingSection #controls .controlButtons button img{
+    width: 120%;
+}
+
+
+/* Little About Us */
+
+
+.LittleAboutUs{
+    background: var(--background);
+}
+
+.LittleAboutUs article{
+    display: flex;
+    padding: 100px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.LittleAboutUs article figure{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.LittleAboutUs article aside{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.LittleAboutUs article aside h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--headingColor);
+    background: var(--backgroundProperties);
+    background-size: contain;
+    padding: var(--backgroundPadding);
+}
+
+.LittleAboutUs article aside p{
+    font-size: 22px;
+    margin: 0 60px 0 0;
+    font-weight: 500;
+    color: var(--textColor);
+    line-height: 40px;
+}
+
+.LittleAboutUs article aside ul{
+    margin: 0 0 0 20px;
+}
+
+.LittleAboutUs article aside ul li{
+    color: var(--textColor);
+    font-size: 22px;
+    line-height: 200%;
+    font-weight: 800;
+}
+
+.LittleAboutUs article aside button{
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    background: var(--buttonBackground);
+    padding: 5px 40px 10px 40px;
+}
+
+.LittleAboutUs article aside button svg{
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+}
+
+/* Clients we worked with */
+
+.Clients{
+    margin: 100px 0;
+}
+
+.Clients article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.Clients article .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: var(--headingColor);
+}
+
+.Clients article .heading h2{
+    font-family: var(--headingFont);
+    font-weight: 900;
+    font-size: 50px;
+    background: var(--backgroundProperties);
+    padding: 25px;
+    margin: 20px 0 0 0;
+}
+
+.Clients article #logos{
+    margin: 50px 0 0 0;
+}
+
+.Clients article #logos > div #logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px 0;
+}
+
+.Clients article #logos > div:nth-child(odd) #logo{
+    background: url(Images/Repeat\ Grid\ 4.png) no-repeat;
+    background-position: 35% 5%;
+}
+
+.Clients article #logos > div:nth-child(even) #logo{
+    background: url(Images/Repeat\ Grid\ 4.png) no-repeat;
+    background-position: 65% 100%;
+}
+
+
+.Clients article #logos > div #logo img{
+    background: var(--background);
+    border-radius: 30px;
+    border: 2px solid #ffd896;
+    box-shadow: 0px 0px 50px 0px #d6d6d6;
+}
